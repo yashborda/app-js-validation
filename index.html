@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma-6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="moblie">
+        <div class="container intro">
+            <div class="row justify-content-center">
+                <img src="assets/images/health.png" class="health-img">
+                <h1>Doctor’s Helpline</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis amet amet volutpat massa
+                    consectetur lacus.</p>
+                <div class="dot">
+                    <div class="dot-1"></div>
+                    <div class="dot-2"></div>
+                    <div class="dot-2"></div>
+                </div>
+                <button id="next" style="margin-top: 15%;">Next</button>
+                <button id="skip">skip</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sign_up" style="display: none;">
+        <div class="back_1"></div>
+        <div class="container" style="z-index: 5;">
+            <div class="row" style="margin-top: 94px;">
+                <div id="sign_up_arrow" class="arrow">
+                    <img src="assets/images/Arrow - Right.png" width="15" height="12">
+                </div>
+                <div class="details">
+                    <h1>Sign up</h1>
+                    <p>Create an account here</p>
+                    <form class="row" style="padding: 13px 20px;">
+                        <div class="pb-2 pt-4 form-input">
+                            <label class="input-label">
+                                <img src="assets/images/Profile.png">
+                            </label>
+                            <input type="text" id="name" placeholder="Create an account here" required>
+                        </div>
+                        <div class="pb-2 form-input">
+                            <label class="input-label">
+                                <img src="assets/images/smartphone.png">
+                            </label>
+                            <input type="number" class="no-arrow" id="number" placeholder="Mobile Number" maxlength="10" max="10" required>
+                        </div>
+                        <div class="pb-2 form-input">
+                            <label class="input-label">
+                                <img src="assets/images/Message.png">
+                            </label>
+                            <input type="email" id="email" placeholder="Email address" required>
+                        </div>
+                        <div class="pb-2 form-input">
+                            <label class="input-label">
+                                <img src="assets/images/Lock.png">
+                            </label>
+                            <input type="password" id="password_up" placeholder="Password" style="min-width: 120px;"
+                                required>
+                            <img class="field-icon ms-auto" src="assets/images/Show.jpg">
+                        </div>
+                    </form>
+                    <h6>By signing up you agree with our Terms of Use</h6>
+                    <button type="submit" id="sign_up_btn" style="margin-top: 5%;">Sign UP</button>
+                    <div class="row justify-content-center align-items-center mt-3">
+                        <div class="col-5">
+                            <div class="line"></div>
+                        </div>
+                        <div class="col-2 p-0 m-0 d-flex justify-content-center">
+                            <div class="or">OR</div>
+                        </div>
+                        <div class="col-5">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <button id="gmail" style="margin-top: 5%; width: 100%;">
+                        <img src="assets/images/Google.png" width="36">Login with Gmail
+                    </button>
+                    <button id="facebook" style="margin-top: 5%; width: 100%;">
+                        <img src="assets/images/Facebook.png" width="36">Login with Facebook
+                    </button>
+                    <p style="text-align: center; margin-top: 40px;">New member? <span id="sign_up_line"
+                            style="color: #E55E76; cursor: pointer;">sign in</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sign_in" style="display: none;">
+        <div class="back_1"></div>
+        <div class="container" style="z-index: 5;">
+            <div class="row" style="margin-top: 110px;">
+                <div id="sign_in_arrow" class="arrow">
+                    <img src="assets/images/Arrow - Right.png" width="15" height="12">
+                </div>
+                <div class="details">
+                    <h1 style="margin-top: 45px;">Sign in</h1>
+                    <p style="margin-bottom: 20px;">Welcome back</p>
+                    <form class="row" style="padding: 13px 30px;">
+                        <div class="pb-2 form-input">
+                            <label class="input-label">
+                                <img src="assets/images/Message.png">
+                            </label>
+                            <input type="email" id="email_in" placeholder="Email address" required>
+                        </div>
+                        <div class="pb-2 form-input" style="margin-bottom: 18px;">
+                            <label class="input-label">
+                                <img src="assets/images/Lock.png">
+                            </label>
+                            <input type="password" id="password_in" placeholder="Password" style="min-width: 120px;" required>
+                            <img class="field-icon ms-auto" src="assets/images/Show.jpg">
+                        </div>
+                    </form>
+                    <a href="javascript:void(0)" id="forgot_password_line" style="font-size: 14px; font-weight: 500; letter-spacing: -0.2px;
+                            text-align: center; display: block; color: #324A59; margin-bottom: 40px;">Forgot Password?
+                    </a>
+                    <button id="sign_in_btn" style="margin-top: 5%;">Sign in</button>
+                    <div class="row justify-content-center align-items-center mt-5">
+                        <div class="col-5">
+                            <div class="line"></div>
+                        </div>
+                        <div class="col-2 p-0 m-0 d-flex justify-content-center">
+                            <div class="or">OR</div>
+                        </div>
+                        <div class="col-5">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <button id="gmail" style="margin-top: 8%; width: 100%;">
+                        <img src="assets/images/Google.png" width="36">Login with Gmail
+                    </button>
+                    <button id="facebook" style="margin-top: 5%; width: 100%;">
+                        <img src="assets/images/Facebook.png" width="36">Login with Facebook
+                    </button>
+                    <p style="text-align: center; margin-top: 40px;">Need an account? <span id="sign_in_line"
+                            style="color: #E55E76; cursor: pointer;">sign up</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="forgot_password" style=" align-items: flex-start; display: none;">
+        <div class="back_1" style="top: -18%;"></div>
+        <div class="container" style="z-index: 5;">
+            <div class="row" style="margin-top: 110px;">
+                <div id="forgot_password_arrow" class="arrow">
+                    <img src="assets/images/Arrow - Right.png" width="15" height="12">
+                </div>
+                <div class="details" style="padding: 30px 5px;">
+                    <h1 style="margin-top: 60px;">Forgot Password?</h1>
+                    <p style="margin-bottom: 65px;margin-top: 35px; color: rgba(0, 0, 0, 0.69); max-width: 365px;">To
+                        recover your password, you need
+                        to enter your registerd email address
+                        we will send the recovery code to your email</p>
+                    <p>Enter your email address</p>
+                    <form class="row" style="padding: 13px 30px;">
+                        <div class="pb-2 form-input">
+                            <label class="input-label">
+                                <img src="assets/images/Message.png">
+                            </label>
+                            <input type="email" id="email_forgot" placeholder="Email address">
+                        </div>
+                    </form>
+                    <button id="activation_code_btn" style="margin-top:50%;">Send Activation Code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirm_code" style=" align-items: flex-start; display: none;">
+        <div class="back_1"></div>
+        <div class="container" style="z-index: 5;">
+            <div class="row" style="margin-top: 110px;">
+                <div id="confirm_code_arrow" class="arrow">
+                    <img src="assets/images/Arrow - Right.png" width="15" height="12">
+                </div>
+                <div class="details" style="padding: 30px 5px;">
+                    <h1 style="margin-top: 60px; text-align: center;">Confirmation code</h1>
+                    <p style="margin-bottom: 15px;margin-top: 38px; color: rgba(0, 0, 0, 0.69); text-align: center;">
+                        Please enter verification code you’ve received
+                        <span style="color: #E55E76;">Umesha@gmail.com </span>
+                    </p>
+                    <p style="text-align: center; margin-top: 28px;">Enter verification code</p>
+                    <form class="row" style="padding: 13px 30px;">
+                        <div class="pb-2 form-input justify-content-center" style="border: none;">
+                            <div class="input-box">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div style="display: flex; gap: 15px;">
+                                <input type="text" class="otp" maxlength="1" tabindex="1" data-key="otp1">
+                                <input type="text" class="otp" maxlength="1" tabindex="2" data-key="otp2">
+                                <input type="text" class="otp" maxlength="1" tabindex="3" data-key="otp3">
+                                <input type="text" class="otp" maxlength="1" tabindex="4" data-key="otp4">
+                            </div>
+                        </div>
+                    </form>
+                    <button id="confirm_btn">Confirm</button>
+                    <p style="text-align: center; color: #E55E76; margin-top: 5%;">Resend Code</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirm_password" style="display: none;">
+        <div class="back_1" style="top: -18%;"></div>
+        <div class="container" style="z-index: 5;">
+            <div class="row" style="margin-top: 90px;">
+                <div id="confirm_password_arrow" class="arrow">
+                    <img src="assets/images/Arrow - Right.png" width="15" height="12">
+                </div>
+                <div class="details">
+                    <h1 style="margin-top: 33px; padding: 0px 30px;">Confirm New <br> Password</h1>
+                    <p style="margin-bottom: 70px; margin-top: 20px; padding: 0px 30px; color: rgba(0, 0, 0, 0.69);">
+                        Please enter your new password. confirm it to enjoy much security.</p>
+                    <p style="padding: 0px 30px;">Enter New Password</p>
+                    <form class="row" style="padding: 13px 42px;">
+                        <div class="pb-2 form-input">
+                            <label class="input-label">
+                                <img src="assets/images/Lock.png">
+                            </label>
+                            <input type="password" id="password_new" placeholder="New Password"
+                                style="min-width: 120px;" >
+                            <img class="field-icon-1 ms-auto" id="field-icon_1" src="assets/images/Show.jpg">
+                        </div>
+                        <div class="pb-2 form-input" style="margin-bottom: 18px;">
+                            <label class="input-label">
+                                <img src="assets/images/Lock.png">
+                            </label>
+                            <input type="password" id="password_confirm" placeholder="Confirm Password"
+                                style="min-width: 120px;" >
+                            <img class="field-icon-2 ms-auto" id="field-icon_2" src="assets/images/Show.jpg">
+                        </div>
+                    </form>
+                    <button id="confirm_password_btn" style="margin-top: 40%;">Confirm Your Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="homepage" class="container " style="padding: 10px 20px; height: 100vh; display: none;">
+        <nav class="navbar">
+            <div class="container-fluid p-0">
+                <button class="navbar-toggler ms-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand me-0" href="javascript:void(0)">
+                    <img src="assets/images/account-icon.jpg" width="50" height="50" style="border-radius: 50%;">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <p>Hi, Adams</p>
+
+        <form class="d-flex" role="search">
+            <input class="form-control me-0 bg-white rounded-0" type="search" placeholder="Search doctor."
+                aria-label="Search">
+            <button class="btn btn-outline-dark bg-white border-0 rounded-0" type="submit">
+                <img src="assets/images/search.jpg" width="20" height="20">
+            </button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/myscript.js"></script>
+</body>
+
+</html>
